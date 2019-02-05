@@ -1,0 +1,110 @@
+#text-pro-cover{
+    margin-top: 5%;
+}
+#edu-tb{
+    width: 500px;
+}
+#jumb-cover-3{
+    background-image: url(cover3.jpg); 
+    background-position: center; 
+    margin-bottom: 0rem; 
+    background-size: cover;
+    height: 400px;
+    opacity: 0.9;
+    text-align: right;
+    color: aliceblue;
+}
+#jumb-cover-2{
+    background-image: url(cover2.jpg); 
+    background-position: center; 
+    margin-bottom: 0rem; 
+    background-size: cover;
+    height: 400px;
+    color: aliceblue;
+    text-align: right;
+}
+#jumb-cover{
+    background-image: url('cover.jpg'); 
+    background-size: cover; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-position: center; 
+    margin-bottom: 0rem;
+}
+#allcard-3col{
+    margin-left: 15%;
+}
+#column-3{
+    background-color: #FFD5D2;
+    height: 500px;
+}
+#home-p{
+    background-color: #B399DD; 
+    height: 550px; 
+    width: inherit;
+}
+
+#nav1{
+    opacity: 0.9; 
+    filter:(opacity=50);
+}
+#hello{
+    text-align: center;
+    padding-top: 3%;
+    color: aliceblue;
+}
+#profile-h{ 
+    margin-top: 3%;
+    height:350px; 
+    width: 450px;
+    margin-left: 5%;
+}
+#profile2{
+    margin-top: 5%;
+    /* border-radius: 50%; */
+    height:400px; 
+    width: 500px;
+}
+#name-h{
+    margin-top: 10%;
+    color: aliceblue;
+}
+#sub-p{
+    color: #2B3856;
+}
+#name-p{
+    margin-top: 10%;
+    color: #2B3856;
+}
+#name-food{
+    margin-left: 5%;
+    padding-top: 3%;
+}
+#hello-2{
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    color: #7F5A58;
+}
+tbody{
+    background-color: white;
+}
+#for-form{
+    padding: 5%;
+    padding-top: 2%;
+    padding-bottom: 0%;
+}
+#inputEmail4{
+    margin: 1%;
+    width: 400px;
+}
+#submit-btn{
+    background-color: #E55451;
+    border-color: #E55451;
+    width: 40%;
+    margin-top: 2%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 5%;
+}
