@@ -129,14 +129,21 @@
       <h4>แบบฝึกหัด</h4>
       <ol>
         <li>เปิดไฟล์ <code>05-js-can-remove-element.html</code></li>
-        <li>แก้ไขปุ่ม <button>Remove first item</button> โดยเมื่อกดปุ่มแล้วจะลบ &lt;li&gt; ตัวแรกใน Example list</li>
+        <li>แก้ไขปุ่ม <button id="remove-btn">Remove first item</button> โดยเมื่อกดปุ่มแล้วจะลบ &lt;li&gt; ตัวแรกใน Example list</li>
 
       </ol>
       <hr>
-
+      <script>
+        del = function() {
+          let last_item = document.querySelector('ul#example > li:nth-child(1)');
+          let parent = last_item.parentElement;
+          parent.removeChild(last_item);
+        }
+        document.querySelector('#remove-btn').addEventListener('click', del);
+      </script>
       <h4>ลับสมอง</h4>
       <ol>
-        <li>แก้ไขปุ่ม <button>Remove all</button> โดยเมื่อกดปุ่มให้ลบ &lt;li&gt; ทั้งหมดใน Example list</li>
+        <li>แก้ไขปุ่ม <button>Remove all</button> โดยเมื่อกดปุ่มให้ลบ &lt;li&gt; ทั้งหมดใน Example </li>
 
       </ol>
       <hr>
