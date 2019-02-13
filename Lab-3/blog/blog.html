@@ -37,7 +37,7 @@
                   <small class="text-muted ml-5">Create Date: {{blog.createDate}}</small>
                 </p>
                 <a v-bind:href="blog.fb" class="btn btn-primary">Go to my Facebook page</a>
-                <a @click="blog.likes++" v-if="blog.likes < 30" class="btn btn-success" >I like this!</a>
+                <a @click.prevent="blog.likes++" v-if="blog.likes < 30" class="btn btn-success" >I like this!</a>
               </div>
             </div>
           </div>
