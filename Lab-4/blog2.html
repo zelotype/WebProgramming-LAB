@@ -46,39 +46,15 @@
             You post too many posts. Please stop!!!
         </div>
         <div class="row">
-          <div class="col-md-4" v-for="blog in blogSearchResult">
-            <div class="card my-3" @click="changeBGColor(blog)">
-              <img :src="blog.image" class="card-img-top img-fluid" alt="..." />
-              <div class="card-body" v-bind:class="[blog.bgColor, blog.textColor]">
-                <h5 class="card-title">
-                  {{ blog.title }}
-                  <span class="badge badge-success ml-5">Likes: {{blog.likes}}</span>
-                </h5>
-                <p class="card-text">
-                  {{ blog.content }}<br />
-                  <small class="text-muted">Create By: {{blog.createBy}}</small>
-                  <small class="text-muted ml-5">Create Date: {{blog.createDate}}</small>
-                </p>
-                <!--<button class="btn btn-primary">Go to my page</button>-->
-                <button class="btn btn-success" @click.stop="blog.likes++">I like this!</button>
-                <button class="btn btn-info" @click.stop="showComment(blog)">Show comment...</button>
-                <div class="card mt-2 text-dark" v-show="blog.showComment" v-for="comment in blog.comments">
-                  <div class="card-body" >
-                    <h6 class="card-title">Comment</h6>
-                    <p class="card-text">
-                        {{comment.text}}<br />
-                      <small class="text-muted">Create By: {{comment.createBy}}</small>
-                      <small class="text-muted ml-5">Create Date: {{blog.createDate}}</small>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <card-blog 
+            v-for="blog in blogs" 
+            v-bind:blog="blog"
+            @add-like="blog.likes++"></card-blog>
         </div>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"></script>
+    <script src="./Web-vue/card-blog.js"></script>
     <script>
       var vm = new Vue({
         el: "#app1",
